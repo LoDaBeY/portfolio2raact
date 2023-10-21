@@ -25,7 +25,7 @@ function App() {
   const {Theme } = useContext(ThemeContext);
 
   return (
-    <div className={`App ${Theme}`}>
+    <div className={`App-${Theme}`}>
       <RouterProvider router={router} />
     </div>
   );

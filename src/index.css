@@ -1,0 +1,14 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.App-Light{
+  color: #000;
+  background-color: white;
+}
+.App-Dark{
+  color: white;
+  background-color: #24243b;
+}
