@@ -1,7 +1,7 @@
 import   './HearoSection.css'
 function HearoSection() {
   return (
-    <div>HearoSection</div>
+    <div className='HearoSection'>HearoSection</div>
   )
 }
 

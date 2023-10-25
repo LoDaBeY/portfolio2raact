@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import "./Header.css";
 import "./HeaderMobileView.css";
@@ -32,13 +33,13 @@ function Header() {
                 </h3>
               </div>
 
-              <div
-                className="DarkLightMode"
-                onChange={(eo) => {
-                  ChangeTheme(Theme === "Dark" ? "Light" : "Dark");
-                }}
-              >
-                <div className="toggleWrapper">
+              <div className="DarkLightMode">
+                <div
+                  onChange={(eo) => {
+                    ChangeTheme(Theme === "Dark" ? "Light" : "Dark");
+                  }}
+                  className="toggleWrapper"
+                >
                   <input type="checkbox" className="dn" id="dn" />
                   <label htmlFor="dn" className="toggle">
                     <span className="toggle__handler">
@@ -89,22 +90,26 @@ function Header() {
 
               <div className="Mode-Humgur-Menu">
                 <div className="DarkLightMode">
-                  <div className="toggleWrapper">
-                    <input type="checkbox" className="dn" id="dn" />
-                    <label htmlFor="dn" className="toggle">
-                      <span className="toggle__handler">
-                        <span className="crater crater--1" />
-                        <span className="crater crater--2" />
-                        <span className="crater-Phone crater--3" />
-                      </span>
-                      <span className="star star--1" />
-                      <span className="star star--2" />
-                      <span className="star star--3" />
-                      <span className="star star--4" />
-                      <span className="star star--5" />
-                      <span className="star star--6" />
+                  <>
+                    <input
+                      onChange={(eo) => {
+                        ChangeTheme(Theme === "Dark" ? "Light" : "Dark");
+                      }}
+                      type="checkbox"
+                      id="toggle_checkbox"
+                    />
+                    <label htmlFor="toggle_checkbox">
+                      <div id="star">
+                        <div className="star" id="star-1">
+                          ★
+                        </div>
+                        <div className="star" id="star-2">
+                          ★
+                        </div>
+                      </div>
+                      <div id="moon" />
                     </label>
-                  </div>
+                  </>
                 </div>
 
                 <div className="Humgur-Menu-List">
@@ -130,7 +135,6 @@ function Header() {
                               onClick={(eo) => {
                                 eo.preventDefault();
                                 setDrawerOpener(false);
-
                               }}
                             >
                               <AiOutlineClose />
@@ -138,7 +142,6 @@ function Header() {
                           </li>
                           <li>
                             <a href="/Translation">
-                              {" "}
                               <AiOutlineTranslation /> <span>Translation</span>
                             </a>
                           </li>
@@ -156,20 +159,6 @@ function Header() {
                       </div>
                     </div>
                   )}
-
-                  {/* <div className="Menu-list">
-                      <ul>
-                        <li>
-                          <a href="/Translation">Translation</a>
-                        </li>
-                        <li>
-                          <a href="/Transcription">Transcription</a>
-                        </li>
-                        <li>
-                          <a href="/Subtitling">Subtitling</a>
-                        </li>
-                      </ul>
-                    </div> */}
                 </div>
               </div>
             </div>

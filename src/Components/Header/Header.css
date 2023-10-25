@@ -6,7 +6,7 @@
 .show-on-phone{
   display: none;
 }
-  .nav {
+.App-Dark .nav {
     width: 100%;
     height: 75px;
     background-color: #18181b;
@@ -14,7 +14,10 @@
     border-bottom-right-radius: 8px;
   
   }
-  
+   .App-Light .nav {
+    background-color: #706427b7;
+
+  }
   
   .Logo-Menu {
     width: 100%;
@@ -40,12 +43,20 @@
     cursor: pointer;
     margin: 15px;
   }
-  .Logo-Photo-Name  h3 a{
+  .App-Dark  .Logo-Photo-Name  h3 a{
     margin-left: 10px;
     text-decoration: none;
-    color: rgb(221, 222, 223);
+    color: rgb(12, 84, 156);
+    transition: all 1s;
+  }
+  .App-Dark  .Logo-Photo-Name  h3 a:hover{
+    color: #0993e2;;
   }
   
+  .App-Light .Logo-Photo-Name  h3 a{
+    text-decoration: none;
+    color: rgb(53, 51, 51);
+  }
   
   .Menu-list ul {
     list-style: none;
@@ -59,15 +70,27 @@
       
   }
   
-  .Menu-list ul li a {
+  .App-Light .Menu-list ul li a {
     text-decoration: none;
-    color: rgb(221, 212, 212);
+    color: rgb(0, 0, 0);
     border-radius: 15px;
     padding: 10px;
   }
   
-  .Menu-list ul li a:hover{
-    box-shadow: 0px 0px 9px 12px #555453;
+  .App-Dark  .Menu-list ul li a {
+    text-decoration: none;
+    color: rgb(238, 232, 232);
+    border-radius: 15px;
+    padding: 10px;
+  }
+
+  .App-Dark .Menu-list ul li a:hover{
+    box-shadow: 0px 0px 9px 12px #0993e2;
+  
+  }
+    
+  .App-Light .Menu-list ul li a:hover{
+    box-shadow: 0px 0px 9px 12px #384119;
   
   }
   

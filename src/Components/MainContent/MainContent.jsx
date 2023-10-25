@@ -1,7 +1,7 @@
 import  './MainContent.css'
 function MainContent() {
   return (
-    <div>MainContent</div>
+    <div className='MainContent'>MainContent</div>
   )
 }
 

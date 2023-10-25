@@ -7,12 +7,16 @@
     display: block;
   }
 
-  .nav {
+  .App-Dark .nav {
     width: 100%;
     height: 75px;
     background-color: #171724;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
+
+  }
+  .App-Light .nav{
+    background-color: #706427b7;
 
   }
 
@@ -40,230 +44,127 @@
     margin: 15px;
   }
 
-  .Logo-Name-Phone h3 a {
+  .App-Dark .Logo-Name-Phone h3 a {
     margin-left: 10px;
     text-decoration: none;
     color: rgb(221, 222, 223);
     flex-grow: 0.5;
   }
 
-
-  .Menu-list ul {
-    list-style: none;
-    display: none;
-  }
-
-  .Menu-list ul li {
-    padding: 3px 5px;
-    margin: 0 10px;
-
-
-  }
-
-  .Menu-list ul li a {
+  .App-Light .Logo-Name-Phone h3 a{
     text-decoration: none;
-    color: rgb(221, 212, 212);
-    border-radius: 15px;
-    padding: 10px;
+    color: rgb(53, 51, 51);
   }
 
-  .Menu-list ul li a:hover {
-    box-shadow: 0px 0px 9px 12px #555453;
-
+  #toggle_checkbox
+  {
+      display: none;
   }
-
-
-  .toggleWrapper {
-    position: relative;
-    overflow: hidden;
+  
+  label
+  {
+      display: block;
+      position: absolute;
+      top: 4%;
+      right: 0;
+      left: 50%;
+      width: 55px;
+      height: 30px;
+      margin: 0 auto;
+      background-color: #77b5fe;
+      border-radius: 56px;
+      transform: translateY(-50%);
+      cursor: pointer;
+      transition: 0.3s ease background-color;
+      overflow: hidden;
   }
-
-  .toggleWrapper input {
-    left: -99em;
+  
+  #star
+  {
+      position: absolute;
+      top: 9px;
+      left: 13px;
+      width: 20px;
+      height: 20px;
+      background-color: #fafd0f;
+      transform: scale(1);
+      border-radius: 50%;
+      transition: 0.3s ease top, 0.3s ease left, 0.3s ease transform, 0.3s ease background-color;
+      z-index: 1;
   }
-
-  .toggle {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    width: 50px;
-    height: 20px;
-    background-color: #83d8ff;
-    border-radius: 50px;
-    transition: background-color 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  
+  #star-1
+  {
+      position: relative;
   }
-
-
-  .toggle__handler {
-    display: inline-block;
-    position: relative;
-    z-index: 1;
-    width: 15px;
-    height: 15px;
-    top: 2px;
-    left: 2px;
-    background-color: #ffcf96;
-    border-radius: 50px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, .3);
-    transition: all 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    transform: rotate(-45deg);
+  
+  #star-2
+  {
+      position: absolute;
+      transform: rotateZ(36deg);
   }
-
-  .toggle__handler .crater {
-    position: absolute;
-    background-color: #e8cda5;
-    opacity: 0;
-    transition: opacity 200ms ease-in-out;
-    border-radius: 100%;
-    width: 1px;
-    height: 2px;
+  
+  .star
+  {
+      top: 0;
+      left: -7px;
+      font-size: 36px;
+      line-height: 28px;
+      color: #fafd0f;
+      transition: 0.3s ease color;
   }
-
-  .toggle__handler .crater--1 {
-    top: 18px;
-    left: 10px;
-    width: 2px;
-    height: 4px;
+  
+  #moon
+  {
+      position: absolute;
+      bottom: -52px;
+      right: 8px;
+      width: 30px;
+      height: 20px;
+      background-color: #fff;
+      border-radius: 50%;
+      transition: 0.3s ease bottom;
   }
-
-  .toggle__handler .crater--2 {
-    top: 28px;
-    left: 22px;
-    width: 6px;
-    height: 6px;
+  
+  #moon:before
+  {
+      content: "";
+      position: absolute;
+      top: -12px;
+      left: -17px;
+      width: 40px;
+      height: 40px;
+      background-color:#03a9f4;
+      border-radius: 50%;
+      transition: 0.3s ease background-color;
   }
-
-  .toggle__handler .crater--3 {
-    top: 10px;
-    left: 25px;
-    width: 8px;
-    height: 8px;
+  
+  #toggle_checkbox:checked + label
+  {
+      background-color: #000;
   }
-
-  .star {
-    position: absolute;
-    background-color: #fff;
-    transition: all 300ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
-    border-radius: 50%;
-    width: 20px;
-    height: 2px;
+  
+  #toggle_checkbox:checked + label #star
+  {
+      top: 3px;
+      left: 64px;
+      transform: scale(0.3);
+      background-color: yellow;
   }
-
-  .star--1 {
-    top: 3px;
-    left: 15px;
-    z-index: 0;
-    width: 30px;
-    height: 3px;
+  
+  #toggle_checkbox:checked + label .star
+  {
+      color: yellow;
   }
-
-  .star--2 {
-    top: 10px;
-    left: 17px;
-    z-index: 1;
-    width: 20px;
-    height: 3px;
+  
+  #toggle_checkbox:checked + label #moon
+  {
+      bottom: 8px;
   }
-
-  .star--3 {
-    top: 15px;
-    left: 10px;
-    z-index: 0;
-    width: 15px;
-    height: 3px;
-  }
-
-  .star--4,
-  .star--5,
-  .star--6 {
-    opacity: 0;
-    transition: all 300ms 0 cubic-bezier(0.445, 0.05, 0.55, 0.95);
-    width: 1px;
-    height: 1px;
-  }
-
-  .star--4 {
-    top: 8px;
-    left: 7px;
-    z-index: 0;
-    width: 2px;
-    height: 2px;
-    transform: translate3d(3px, 0, 0);
-  }
-
-  .star--5 {
-    top: 18px;
-    left: 10px;
-    z-index: 0;
-    width: 3px;
-    height: 3px;
-    transform: translate3d(3px, 0, 0);
-  }
-
-  .star--6 {
-    top: 20px;
-    left: 15px;
-    z-index: 0;
-    width: 2px;
-    height: 2px;
-    transform: translate3d(3px, 0, 0);
-  }
-
-  input:checked+.toggle {
-    background-color: #749dd6;
-  }
-
-  input:checked+.toggle:before {
-    color: #749ed7;
-  }
-
-  input:checked+.toggle:after {
-    color: #fff;
-  }
-
-  input:checked+.toggle .toggle__handler {
-    background-color: #ffe5b5;
-    transform: translate3d(20px, 0, 0) rotate(0);
-  }
-
-  input:checked+.toggle .toggle__handler .crater {
-    opacity: 1;
-  }
-
-  input:checked+.toggle .star--1 {
-    width: 2px;
-    height: 2px;
-  }
-
-  input:checked+.toggle .star--2 {
-    width: 4px;
-    height: 4px;
-    transform: translate3d(-5px, 0, 0);
-  }
-
-  input:checked+.toggle .star--3 {
-    width: 2px;
-    height: 2px;
-    transform: translate3d(-7px, 0, 0);
-  }
-
-  input:checked+.toggle .star--4,
-  input:checked+.toggle .star--5,
-  input:checked+.toggle .star--6 {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-
-  input:checked+.toggle .star--4 {
-    transition: all 300ms 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
-  }
-
-  input:checked+.toggle .star--5 {
-    transition: all 300ms 300ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
-  }
-
-  input:checked+.toggle .star--6 {
-    transition: all 300ms 400ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  
+  #toggle_checkbox:checked + label #moon:before
+  {
+      background-color: #000;
   }
 
   .Mode-Humgur-Menu {
@@ -284,16 +185,40 @@
     z-index: 1;
     background-color: #282830e8;
     backdrop-filter: blur(4px);
+
   }
-  .modal ul {
+  .modal {
+    animation:scale-up-center .4s cubic-bezier(.39,.575,.565,1.000) both;
+  
+  }
+  @keyframes scale-up-center {
+    0% {
+              transform: scale(0.5);
+    }
+    100% {
+              transform: scale(1);
+    }
+  }
+
+  .App-Dark .modal ul {
     width: 75%;
-    margin-inline: auto;
-    margin-top: 2rem;
+    margin: auto;
+    margin-top: 11rem;
     border-radius: 1rem;
     padding: 1rem 2rem;
     background-color:black;
     position: relative;
   }
+  .App-Light  .modal ul{
+    width: 75%;
+    margin: auto;
+    margin-top: 11rem;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    background-color: #cfc2ae;
+    position: relative;
+  }
+
   .modal ul li{
     list-style: none;
     padding: 1rem;
@@ -317,16 +242,38 @@
     color: white;
 
   }
-  .modal ul li a{
+  .App-Dark  .modal ul li a{
     text-decoration: none;
     color: rgb(199, 194, 194);
     font-size: 1rem;
+    font-weight: 600;
   
   }
 
-  span{
-    margin-left: 20px;
+  .App-Light .modal ul li a{
+    text-decoration: none;
+    color: rgb(27, 26, 26);
+    font-size: 1rem;
+    font-weight: 600;
+  
   }
+
+  .modal ul li a:hover{
+    text-decoration: none;
+    color: rgb(77, 69, 69);
+    font-size: 1.1rem;
+    font-weight: 600;
+  
+  }
+  
+
+  /* span{
+    margin-left: 20px;
+  } */
+
+
+
+
 
 
 }

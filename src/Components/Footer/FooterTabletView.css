@@ -1,12 +1,10 @@
-@media screen and (min-width: 862px) {
-
-
+@media screen and (max-width: 862px) {
   .App-Dark .Contact,
   .App-Light .Contact {
     margin: 1rem;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
     width: 100%;
   }
 
@@ -16,6 +14,7 @@
     flex-direction: column;
     justify-content: center;
     margin: 1rem;
+    align-items: center;
 
   }
 
@@ -35,7 +34,7 @@
     background-color: #cfc2ae;
     border: none;
     transition: all 1s;
-
+    scale: 1;
   }
 
 
@@ -46,15 +45,15 @@
     background-color: #07f1e6;
     border: none;
     transition: all 1s;
-
+    scale: 1;
   }
 
-  .App-Dark .LetsTalkBtn input:hover {
-    background-color: #058f88;
+  .App-Dark .LetsTalkBtn input:focus {
+    scale: 0.9;
   }
 
-  .App-Light .LetsTalkBtn input:hover {
-    background-color: #cea76e;
+  .App-Light .LetsTalkBtn input:focus {
+    scale: 0.9;
   }
 
   .App-Dark .Info,
@@ -62,16 +61,18 @@
 
     padding: 1rem;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     width: auto;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+
   }
 
 
   .App-Light .ContactInfo,
   .App-Dark .ContactInfo {
     padding: 1rem;
-    margin: 0 3rem;
+    margin:0  1rem;
     font-weight: 500;
     color: white;
     display: flex;
@@ -104,6 +105,20 @@
     text-align: center;
   }
 
+  .App-Dark .KGsginture > h4 > p {
+    text-align: center;
+    box-sizing: border-box;
+    display: inline-block;
+    color: #07f1e6;
+  }
+  .App-Light .KGsginture > h4 > p {
+    text-align: center;
+    box-sizing: border-box;
+    display: inline-block;
+    color: #f1ce07;
+
+  }
+  
   .Forum {
     position: fixed;
     inset: 0;
@@ -229,25 +244,6 @@
     100% {
       transform: scale(1);
     }
-  }
-
-
-  .App-Light .KGsginture>h4>p {
-    color: #f1ce07;
-    text-align: center;
-
-    box-sizing: border-box;
-    display: inline-block;
-
-  }
-
-  .App-Dark .KGsginture>h4>p {
-    color: #07f1e6;
-    text-align: center;
-
-    box-sizing: border-box;
-    display: inline-block;
-
   }
 
 
