@@ -1,7 +1,7 @@
 @media screen and (max-width: 862px) {
   .App-Dark .Contact,
   .App-Light .Contact {
-    margin: 1rem;
+    margin: 1rem 0;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -89,6 +89,7 @@
 
   .App-Dark .ContactIcons a,
   .App-Light .ContactIcons a {
+    all: unset;
     margin: 0.6rem;
     font-size: x-large;
   }
@@ -137,8 +138,8 @@
   .App-Light .ContactUsForum {
     display: flex;
     flex-direction: column;
-    width: 50%;
-    height: 60%;
+    width: 65%;
+    height: 50%;
     margin: auto;
     margin-top: 10rem;
     border-radius: 1rem;
@@ -151,8 +152,8 @@
   .App-Dark  .ContactUsForum {
     display: flex;
     flex-direction: column;
-    width: 50%;
-    height: 60%;
+    width: 65%;
+    height: 50%;
     margin: auto;
     margin-top: 10rem;
     border-radius: 1rem;

@@ -45,7 +45,6 @@
   }
 
   .App-Dark .Logo-Name-Phone h3 a {
-    margin-left: 10px;
     text-decoration: none;
     color: rgb(221, 222, 223);
     flex-grow: 0.5;
@@ -65,7 +64,6 @@
   {
       display: block;
       position: absolute;
-      top: 4%;
       right: 0;
       left: 50%;
       width: 55px;
@@ -177,6 +175,7 @@
 
   .FaHome {
     font-size: x-large;
+
   }
 
   .drawer {
@@ -242,6 +241,11 @@
     color: white;
 
   }
+
+  .modal ul li a span {
+    margin-left: 0.6rem;  }
+
+
   .App-Dark  .modal ul li a{
     text-decoration: none;
     color: rgb(199, 194, 194);
@@ -249,6 +253,8 @@
     font-weight: 600;
   
   }
+
+
 
   .App-Light .modal ul li a{
     text-decoration: none;

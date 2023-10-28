@@ -38,6 +38,7 @@ function Header() {
                   onChange={(eo) => {
                     ChangeTheme(Theme === "Dark" ? "Light" : "Dark");
                   }}
+                  
                   className="toggleWrapper"
                 >
                   <input type="checkbox" className="dn" id="dn" />
