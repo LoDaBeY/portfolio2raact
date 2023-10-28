@@ -121,10 +121,10 @@
   }
 
   .App-Light .ContactUsForum {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     width: 50%;
-    height: 50%;
+    /* height: 50%; */
     margin: auto;
     margin-top: 10rem;
     border-radius: 1rem;
@@ -135,10 +135,10 @@
   }
 
   .App-Dark .ContactUsForum {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     width: 50%;
-    height: 50%;
+    /* height: 50%; */
     margin: auto;
     margin-top: 10rem;
     border-radius: 1rem;
@@ -151,6 +151,7 @@
   .ContactUsForum .ContanctUsForumHeader {
     text-align: center;
     text-transform: uppercase;
+    margin-top: 1rem;
   }
 
   .ContactUsForum h2,

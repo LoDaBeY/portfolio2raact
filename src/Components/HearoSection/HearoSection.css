@@ -8,6 +8,7 @@
   background-color: #18181b;
   border-radius: 7px;
   margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 .App-Light .container{
 
@@ -115,6 +116,11 @@
   scale: 1.2;
 }
 
+.App-Dark .Divider{
+  width: 90%;
+  margin: auto
+}
+
 @media screen and (min-width: 910px) {
   .animation{
     display: block;
@@ -150,7 +156,7 @@
 }
 .App-Dark .titleAndSub h1 {
   font-size: 1.34rem;
-  font-weight: 200;
+  font-weight: 700;
   margin-bottom: 1rem;
   line-height: 40px;
   text-align: center;
@@ -159,7 +165,7 @@
 
 .App-Light .titleAndSub h1 {
   font-size: 1.34rem;
-  font-weight: 200;
+  font-weight: 700;
   margin-bottom: 1rem;
   line-height: 40px;
   color: rgb(63, 63, 13);
@@ -167,5 +173,23 @@
 
 }
 
+.App-Dark .titleAndSub h3 {
+  color: rgb(187, 178, 178);
+  margin-bottom: 2rem;
+  line-height: 25px;
+  text-align: center;
+  font-size: small;
+
+}
+
+.App-Light .titleAndSub h3{
+  color: rgb(46, 45, 32);
+  margin-bottom: 2rem;
+  line-height: 25px;
+  text-align: center;
+  font-size: small;
+}
+
   
 }
+

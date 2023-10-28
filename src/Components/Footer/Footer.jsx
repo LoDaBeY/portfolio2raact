@@ -26,23 +26,25 @@ function Footer() {
           </div>
           <div className="brief">
             <span>
-              Every project starts with a chat. Joven leads our client
-              conversations and will be happy to discuss your project. He will
-              also pull in the right people from the team when needed.
+              Each project commences with a professional dialogue, with me
+              taking the lead in these discussions. I am more than willing to
+              engage in a comprehensive discussion about your project's details
+              and, when necessary for larger projects, assemble the appropriate
+              team members.
             </span>
           </div>
 
           {Forum && (
             <div className="Forum">
               <div className="ContactUsForum">
-              <div className="colsure">
-              <AiOutlineClose
-                  onClick={() => {
-                    setForum(false);
-                  }}
-                  className="Close"
-                />
-              </div>
+                <div className="colsure">
+                  <AiOutlineClose
+                    onClick={() => {
+                      setForum(false);
+                    }}
+                    className="Close"
+                  />
+                </div>
                 <h2 className="ContanctUsForumHeader">Contact Us</h2>
 
                 <div className="fristName">
@@ -69,14 +71,10 @@ function Footer() {
                     name="WriteAMessage"
                   />
                 </div>
-<div className="SubmitDiv">
-                  <input
-                    id="Submit"
-                    type="submit"
-                    value="Submit"
-                  />
+                <div className="SubmitDiv">
+                  <input id="Submit" type="submit" value="Submit" />
                 </div>
-</div>
+              </div>
             </div>
           )}
 

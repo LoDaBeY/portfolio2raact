@@ -23,9 +23,24 @@
     margin-bottom: 13px;
   }
 
-  .brief {
-    width: 400px;
+  .App-Dark .brief {
+
     margin-bottom: 16px;
+    line-height: 20px;
+    font-size: small;
+  color: rgb(187, 178, 178);
+
+
+  }
+
+  .App-Light .brief {
+
+    margin-bottom: 16px;
+    line-height: 20px;
+    font-size: small;
+    text-align: center;
+
+
   }
 
   .App-Light .LetsTalkBtn input {
@@ -71,8 +86,8 @@
 
   .App-Light .ContactInfo,
   .App-Dark .ContactInfo {
-    padding: 1rem;
-    margin:0  1rem;
+    padding: 0.5rem;
+    margin: 1rem;
     font-weight: 500;
     color: white;
     display: flex;
