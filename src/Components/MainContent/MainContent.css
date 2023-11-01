@@ -1,5 +1,111 @@
 .MainContent{
   width: 100%;
+}
+.Headlines{
+  width: 100%;
+  font-size: large;
+  text-align: center;
+  padding: 0.6rem;
+  margin: 0.5rem 0;
+}
+.Headlines p {
+  font-size: medium;
+  text-align: center;
+  margin: 0.5rem 0;
+}
+
+.Projects-Containers{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+
+
+.App-Light .button{
+  display: flex;
+  flex-direction: column;
+    width: 10rem;
+    padding: .75rem 0;
+    margin: 1rem 0.7rem;
+    text-align: center;
+    font-size: 1rem;
+    text-transform: capitalize;
+    border-radius: 1rem;
+    background-color: #cfc2ae;
+    border: none;
+    transition: all 1s;
+    scale: 1;
+    cursor: pointer;
+    border: #0c0f0f 1px solid;
+    text-align: center;
+    align-items: center;
+    font-weight: 500;
+}
+.App-Dark .button{
+  width: 10rem;
+  padding: .75rem 0;
+  margin: 1rem 0.7rem;
+  text-align: center;
+  font-size: 1rem;
+  text-transform: capitalize;
+  border-radius: 1rem;
+  background-color: #07f1e6;
+  border: none;
+  transition: all 1s;
+  scale: 1;
+  cursor: pointer;
+  border: #0c0f0f 1px solid;
+  text-align: center;
+  align-items: center;
+  font-weight: 500;
+}
+
+.button:hover {
+  opacity: .8;
+  scale: 0.9;
 
 }
 
+.App-Light .button-active{
+  display: flex;
+  flex-direction: column;
+    width: 10rem;
+    padding: .75rem 0;
+    margin: 1rem 0.7rem;
+    text-align: center;
+    font-size: 1rem;
+    text-transform: capitalize;
+    border-radius: 1rem;
+    background-color: #cfc2ae;
+    border: none;
+    transition: all 1s;
+    opacity: .8;
+    scale: 0.9;
+    cursor: pointer;
+    border: #0c0f0f 1px solid;
+    text-align: center;
+    align-items: center;
+    font-weight: 500;
+}
+
+.App-Dark .button-active{
+  width: 10rem;
+  padding: .75rem 0;
+  margin: 1rem 0.7rem;
+  text-align: center;
+  font-size: 1rem;
+  text-transform: capitalize;
+  border-radius: 1rem;
+  background-color: #07f1e6;
+  border: none;
+  transition: all 1s;
+  opacity: .8;
+  scale: 0.9;
+  cursor: pointer;
+  border: #0c0f0f 1px solid;
+  text-align: center;
+  align-items: center;
+  font-weight: 500;
+}

@@ -151,7 +151,7 @@
 }
 .section1,
 .section2 {
-  margin: 0.7rem;
+  margin: 0.4rem;
 
 }
 .App-Dark .titleAndSub h1 {
@@ -188,6 +188,10 @@
   line-height: 25px;
   text-align: center;
   font-size: small;
+}
+
+.section1, .Avatar-container{
+  width: 100%;
 }
 
   

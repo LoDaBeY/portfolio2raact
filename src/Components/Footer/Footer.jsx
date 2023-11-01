@@ -7,6 +7,7 @@ import {
   AiFillLinkedin,
   AiFillFacebook,
   AiOutlineClose,
+  AiOutlineArrowUp
 } from "react-icons/ai";
 import { useState } from "react";
 
@@ -50,6 +51,7 @@ function Footer() {
                 <div className="fristName">
                   <h4>Name and Surname</h4>
                   <input
+                    required
                     placeholder="Place your name and surname here"
                     type="text"
                     name="Name"
@@ -59,6 +61,7 @@ function Footer() {
                   <h4>Email</h4>
                   <input
                     placeholder="Place your Email here"
+                    required
                     type="email"
                     name="Email"
                   />
@@ -120,6 +123,8 @@ function Footer() {
           Designed and developed by Khaled <p>Ghonim</p> © 2024.
         </h4>
       </div>
+
+      <button className="Scroll2Up"> <AiOutlineArrowUp/></button>
     </div>
   );
 }

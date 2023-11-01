@@ -262,6 +262,48 @@
     }
   }
 
+  .App-Light .Scroll2Up {
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    background-color: #cfc2ae;
+    border: none;
+    position: fixed;
+    bottom: 2%;
+    right: 3%;
+    transition: 0.3s all ;
+    opacity: 0.4;
+  }
+
+
+
+  .App-Dark .Scroll2Up {
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    background-color: #07f1e6;
+    border: none;
+    position: fixed;
+    bottom: 2%;
+    right: 3%;
+    transition: 0.3s all ;
+    opacity: 0.4;
+  }
+
+  .App-Dark .Scroll2Up:hover {
+    background-color: #058f88;
+    border: 1px solid #07f1e5b0;;
+    opacity: 1;
+  }
+
+  .App-Light .Scroll2Up:hover {
+    background-color: #cea76e;
+    border: 1px solid #cea86ea4;
+    opacity: 1;
+
+  }
+
+
 
 
 }
