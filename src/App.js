@@ -4,21 +4,12 @@ import {useContext } from "react";
 import ThemeContext from "../src/Pages/ThemeContext/ThemeContext";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import SignIn from "./Pages/Sign/SignIn/SignIn";
-import SignUp from "./Pages/Sign/SignUp/SignUp";
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
   },
-  {
-    path: "/SignIn",
-    element: <SignIn />,
-  },
-  {
-    path: "/SignUp",
-    element: <SignUp />,
-  },
+
 ]);
 
 function App() {

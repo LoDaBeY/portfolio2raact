@@ -18,7 +18,7 @@ function HearoSection() {
   const { Theme } = useContext(ThemeContext);
 
   return (
-    <div id="Up" className="HearoSection">
+    <div className="HearoSection">
       <div className="container">
         <div className="section1">
           <div className="Avatar-container">

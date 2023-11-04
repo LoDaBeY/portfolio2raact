@@ -18,7 +18,7 @@ function Header() {
 
   return (
     <div>
-      <div className="nav">
+      <div id="Up" className="nav">
         <div className="show-on-dekstop">
           <div className="Header-container">
             <div className="Logo-Menu">

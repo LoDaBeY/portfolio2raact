@@ -7,12 +7,20 @@ import {
   AiFillLinkedin,
   AiFillFacebook,
   AiOutlineClose,
-  AiOutlineArrowUp
+  AiOutlineArrowUp,
 } from "react-icons/ai";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function Footer() {
   const [Forum, setForum] = useState(false);
+  const [ScrollBtnUp, setScrollBtnUp] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      window.scrollY > 200 ? setScrollBtnUp(true) : setScrollBtnUp(false);
+    });
+  }, []);
+
   return (
     <div>
       {/* Contact
@@ -124,7 +132,11 @@ function Footer() {
         </h4>
       </div>
 
-      <button className="Scroll2Up"> <AiOutlineArrowUp/></button>
+      {ScrollBtnUp && (
+        <a href="#Up">
+          <AiOutlineArrowUp className="ScrollBtnUp" />
+        </a>
+      )}
     </div>
   );
 }
