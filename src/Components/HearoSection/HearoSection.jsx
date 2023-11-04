@@ -77,7 +77,7 @@ function HearoSection() {
         </div>
       </div>
 
-      <div className="Divider"></div>
+
     </div>
   );
 }

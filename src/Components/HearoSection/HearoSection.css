@@ -116,10 +116,6 @@
   scale: 1.2;
 }
 
-.App-Dark .Divider{
-  width: 90%;
-  margin: auto
-}
 
 @media screen and (min-width: 910px) {
   .animation{

@@ -17,7 +17,9 @@ function Home() {
     <div>
       <Header />
       <HearoSection />
+      <div className="Divider"></div>
       <MainContent />
+      <div className="Divider"></div>
       <Footer />
 
       {ScrollBtnUp && (
