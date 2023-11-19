@@ -120,12 +120,6 @@
     backdrop-filter: blur(4px);
   }
 
-  .ContactUsForum {
-
-    justify-content: center;
-    width: 100%;
-    padding: 1rem;
-  }
 
   .App-Light .ContactUsForum {
     /* display: flex;
@@ -138,6 +132,7 @@
     padding: 1rem 2rem;
     background-color: #ccac7bd0;
     position: relative;
+    
 
   }
 
@@ -175,7 +170,7 @@
     margin-bottom: 1rem;
   }
 
-  .WriteAMessage input,
+  textarea,
   .Email input,
   .fristName input {
     border: none;
@@ -197,6 +192,7 @@
     width: 30%;
     padding: 1rem;
     margin-top: 1rem;
+    margin-bottom: 1rem;
     border-radius: 1rem;
     color: white;
     font-weight: 600;
@@ -207,6 +203,10 @@
     align-items: center;
   }
 
+  .SubmitMassage{
+    font-size: medium;
+    text-align: center;
+  }
   .colsure {
     position: relative;
   }

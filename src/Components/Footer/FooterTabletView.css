@@ -147,12 +147,6 @@
     backdrop-filter: blur(4px);
   }
 
-  .ContactUsForum {
-
-    justify-content: center;
-    width: 100%;
-    padding: 1rem;
-  }
 
   .App-Light .ContactUsForum {
     display: flex;
@@ -160,7 +154,7 @@
     /* width: 65%;
     height: 50%; */
     margin: auto;
-    margin-top: 10rem;
+    margin-top: 7rem;
     border-radius: 1rem;
     padding: 1rem 2rem;
     background-color: #ccac7bd0;
@@ -174,7 +168,7 @@
     /* width: 65%;
     height: 50%; */
     margin: auto;
-    margin-top: 10rem;
+    margin-top: 7rem;
     border-radius: 1rem;
     padding: 1rem 2rem;
     background-color: #0a5e74;
@@ -201,7 +195,7 @@
     margin-bottom: 1rem;
   }
 
-  .WriteAMessage input,
+  textarea,
 .Email input,
 .fristName input {
     border: none;
@@ -220,9 +214,9 @@
     border: none;
     outline: none;
     background-color: #058f88;
-    width: 30%;
+    width: 40%;
     padding: 1rem;
-    margin-top: 1rem;
+    margin: 1rem;
     border-radius: 1rem;
     color: white;
     font-weight: 600;
@@ -266,6 +260,11 @@
     }
   }
 
+  .SubmitMassage{
+    margin-top: 1rem;
+    font-size: large;
+
+  }
   .App-Light .Scroll2Up {
     border-radius: 50%;
     width: 2rem;

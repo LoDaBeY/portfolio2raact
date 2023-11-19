@@ -24,7 +24,8 @@ const ProjectData = [
     title: "Transcription",
     catagory: "Transcription",
     image: "./images/Transcription.jpg",
-    description: "As a transcriptionist, I specialize in converting audio content into written form with precision and accuracy. With a keen ear and fast typing skills, I ensure that every word is captured. Trust me to transcribe your audio recordings into clear, well-structured text.",
+    description:
+      "As a transcriptionist, I specialize in converting audio content into written form with precision and accuracy. With a keen ear and fast typing skills, I ensure that every word is captured. Trust me to transcribe your audio recordings into clear, well-structured text.",
   },
   {
     id: 3,

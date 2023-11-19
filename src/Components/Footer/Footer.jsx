@@ -10,10 +10,12 @@ import {
   AiOutlineArrowUp,
 } from "react-icons/ai";
 import { useState, useEffect } from "react";
+import { useForm, ValidationError } from "@formspree/react";
 
 function Footer() {
   const [Forum, setForum] = useState(false);
   const [ScrollBtnUp, setScrollBtnUp] = useState(false);
+  const [state, handleSubmit] = useForm("xknlakow");
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -44,7 +46,7 @@ function Footer() {
           </div>
 
           {Forum && (
-            <div className="Forum">
+            <form onSubmit={handleSubmit} className="Forum">
               <div className="ContactUsForum">
                 <div className="colsure">
                   <AiOutlineClose
@@ -70,30 +72,48 @@ function Footer() {
                   <input
                     placeholder="Place your Email here"
                     required
+                    id="email"
                     type="email"
-                    name="Email"
+                    name="email"
+                  />
+                  <ValidationError
+                    prefix="Email"
+                    field="email"
+                    errors={state.errors}
                   />
                 </div>
                 <div className="WriteAMessage">
                   <h4>Write a Message</h4>
-                  <input
+                  <textarea
                     placeholder="Write your Project details here"
-                    type="text"
-                    name="WriteAMessage"
+                    id="message"
+                    name="message"
+                  />
+                  <ValidationError
+                    prefix="Message"
+                    field="message"
+                    errors={state.errors}
                   />
                 </div>
                 <div className="SubmitDiv">
-                  <input id="Submit" type="submit" value="Submit" />
+                  <button
+                    id="Submit"
+                    type="submit"
+                    value="Submit"
+                    disabled={state.submitting}
+                  >
+                    {state.submitting ? "Submitting...." : "Submit"}
+                  </button>
                 </div>
+                {state.succeeded && (
+                  <h3 className="SubmitMassage">
+                    Thanks for your message, it has been received and under
+                    reviewing!
+                  </h3>
+                )}
               </div>
-            </div>
+            </form>
           )}
-
-
-
-
-
-          
 
           <div className="LetsTalkBtn">
             <input
