@@ -14,7 +14,7 @@ function MainContent() {
     });
     setNewArray(fuck);
   };
-
+  
   return (
     <div className="MainContent">
       {/* Headline
@@ -81,6 +81,7 @@ function MainContent() {
               className={
                 CurrentActive === "Subtitling" ? "button-active" : "button"
               }
+              id="Subtitling"
             >
               Subtitling
             </button>
@@ -92,6 +93,7 @@ function MainContent() {
               className={
                 CurrentActive === "Transcription" ? "button-active" : "button"
               }
+              id="Transcription"
             >
               Transcription
             </button>

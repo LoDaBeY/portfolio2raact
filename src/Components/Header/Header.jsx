@@ -61,13 +61,13 @@ function Header() {
               <div className="Menu-list">
                 <ul>
                   <li>
-                    <a href="/">Translation</a>
+                    <a href="#Translation">Translation</a>
                   </li>
                   <li>
-                    <a href="/">Transcription</a>
+                    <a href="#Transcription">Transcription</a>
                   </li>
                   <li>
-                    <a href="/">Subtitling</a>
+                    <a href="#Subtitling">Subtitling</a>
                   </li>
                 </ul>
               </div>
