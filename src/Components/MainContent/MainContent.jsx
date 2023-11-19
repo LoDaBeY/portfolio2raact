@@ -36,11 +36,13 @@ function MainContent() {
             <button
               onClick={() => {
                 setCurrentActive("button-active");
+                
                 setNewArray(ProjectData);
               }}
               className={
                 CurrentActive === "button-active" ? "button-active" : "button"
               }
+          
             >
               All Projects
             </button>
@@ -60,11 +62,13 @@ function MainContent() {
             </button>
             <button
               onClick={() => {
+                setCurrentActive("Translation");
                 ClickHandler("Translation");
               }}
               className={
                 CurrentActive === "Translation" ? "button-active" : "button"
               }
+              id="Translation"
             >
               Translation
             </button>

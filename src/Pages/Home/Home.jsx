@@ -9,7 +9,7 @@ function Home() {
   const [ScrollBtnUp, setScrollBtnUp] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      window.scrollY > 100 ? setScrollBtnUp(true) : setScrollBtnUp(false);
+      window.scrollY > 900 ? setScrollBtnUp(true) : setScrollBtnUp(false);
     });
   }, []);
 

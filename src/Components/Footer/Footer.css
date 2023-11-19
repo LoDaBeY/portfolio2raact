@@ -34,6 +34,8 @@
     background-color: #cfc2ae;
     border: none;
     transition: all 1s;
+    margin-top: 1rem;
+    margin-left: 2rem;
 
   }
 
@@ -45,6 +47,8 @@
     background-color: #07f1e6;
     border: none;
     transition: all 1s;
+    margin-top: 1rem;
+    margin-left: 2rem;
 
   }
 
@@ -97,12 +101,15 @@
     padding: 1rem;
     border-top: solid 1px rgba(63, 63, 70, .4);
     text-align: center;
+    margin-top: 3rem;
   }
 
   .App-Dark .KGsginture {
     padding: 1rem;
     border-top: solid 1px #07f1e6;
     text-align: center;
+    margin-top: 3rem;
+
   }
 
   .Forum {

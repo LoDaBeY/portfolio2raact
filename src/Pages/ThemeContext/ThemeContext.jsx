@@ -17,14 +17,14 @@ const ProjectData = [
     catagory: "Translation",
     image: "./images/translation.webp",
     description:
-      "As a seasoned language translator, I specialize in providing expert translation services in multiple language pairs. With fluency in English, Arabic, and Turkish, I offer precise and culturally nuanced translations from English to Arabic, Arabic to English, Turkish to Arabic, and Arabic to Turkish. With meticulous attention to detail and a thorough understanding of language intricacies, I ensure your message is accurately conveyed across different languages and cultural contexts    ",
+      "I offer expert translations in English, Arabic, and Turkish. Specializing in precision and cultural nuances, I cover various language pairs, ensuring your message's accuracy and cultural relevance.   ",
   },
   {
     id: 2,
     title: "Transcription",
     catagory: "Transcription",
     image: "./images/Transcription.jpg",
-    description: "lorente transcription",
+    description: "As a transcriptionist, I specialize in converting audio content into written form with precision and accuracy. With a keen ear and fast typing skills, I ensure that every word is captured. Trust me to transcribe your audio recordings into clear, well-structured text.",
   },
   {
     id: 3,
@@ -32,7 +32,7 @@ const ProjectData = [
     catagory: "Subtitling",
     image: "./images/Subtitling.webp",
     description:
-      "Unleash the full potential of your videos with my creative expertise in video subtitling and transcription services. I seamlessly bridge the language gap with my Turkish, English, and Arabic fluency, offering accurate and captivating translations in both directions. From English to Arabic, Turkish to Arabic, and beyond, I ensure your videos resonate with diverse audiences, captivating hearts and minds across cultures. Let's bring your visuals to life and connect the world through powerful storytelling    ",
+      "Maximize your videos' impact with my expert subtitling and transcription. With proficiency in Turkish, English, and Arabic, I bridge language barriers, providing captivating translations. Whether English to Arabic or Turkish, I'll make your videos resonate with global audiences, sharing compelling stories worldwide. Let's connect the world through powerful storytelling.   ",
   },
   {
     id: 4,
@@ -40,7 +40,7 @@ const ProjectData = [
     catagory: "MTPE",
     image: "./images/MTPE.webp",
     description:
-      "Join me on a journey to transform your language with my MTPE (Machine Translation Post-Editing) editing services. As a linguistic alchemist, I take the raw materials of machine-generated translations and imbue them with the power of human creativity. Witness the magic of technology and human expertise coming together to create linguistic works of art that will capture the hearts and minds of people worldwide. Let's shape the future of communication together    ",
+      "Embark on a language transformation journey with my MTPE (Machine Translation Post-Editing) editing. I blend machine-generated translations with human creativity, creating linguistic masterpieces that resonate globally. Experience the synergy of technology and human expertise in crafting powerful communication. Let's shape the future together.   ",
   },
   {
     id: 6,
@@ -48,7 +48,7 @@ const ProjectData = [
     catagory: "Project Management",
     image: "./images/Project Management.webp",
     description:
-      "With a wealth of experience as a Project Manager and Operation Manager at reputable companies in Switzerland and the UAE, I offer exceptional Project Management services. I bring a strategic approach, meticulous planning, and effective execution to ensure successful project outcomes aligned with your business objectives",
+      "With extensive experience as a Project Manager and Operation Manager in Switzerland and the UAE, I provide outstanding Project Management services. My strategic approach, meticulous planning, and effective execution guarantee successful project outcomes that align with your business objectives.",
   },
   {
     id: 7,
@@ -56,7 +56,7 @@ const ProjectData = [
     catagory: "Linguistic Quality Assurance",
     image: "./images/Linguistic Quality Assurance.webp",
     description:
-      "Embark on a linguistic journey of perfection with my extraordinary Linguistic Quality Assurance services. Harnessing the artistry of language, I weave a tapestry of flawlessness, polishing every word and nuance to captivate your audience. From linguistic finesse to cultural resonance, I breathe life into your content, crafting a symphony of linguistic brilliance. Elevate your brand's voice and leave an indelible mark with my unrivalled linguistic mastery      ",
+      "Embark on a journey to linguistic perfection with my exceptional Linguistic Quality Assurance services. I blend the artistry of language to create flawless content that resonates with your audience. From linguistic finesse to cultural relevance, I breathe life into your content, crafting a masterpiece of linguistic brilliance. Elevate your brand's voice and make a lasting impression with my unparalleled linguistic expertise.     ",
   },
 ];
 const reducer = (firstState, action) => {

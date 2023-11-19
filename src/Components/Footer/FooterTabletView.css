@@ -113,12 +113,16 @@
     padding: 1rem;
     border-top: solid 1px rgba(63, 63, 70, .4);
     text-align: center;
+    margin-top: 2rem;
+
   }
 
   .App-Dark .KGsginture {
     padding: 1rem;
     border-top: solid 1px #07f1e6;
     text-align: center;
+    margin-top: 2rem;
+
   }
 
   .App-Dark .KGsginture > h4 > p {
