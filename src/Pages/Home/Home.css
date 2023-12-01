@@ -1,43 +1,36 @@
+.App-Light a .ScrollBtnUp {
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  background-color: #cfc2ae;
+  border: none;
+  position: fixed;
+  bottom: 2%;
+  right: 3%;
+  transition: 0.3s all;
 
-  .App-Light a .ScrollBtnUp {
-    border-radius: 50%;
-    width: 2rem;
-    height: 2rem;
-    background-color: #cfc2ae;
-    border: none;
-    position: fixed;
-    bottom: 2%;
-    right: 3%;
-    transition: 0.3s all ;
-
-  }
-
-  .App-Dark a .ScrollBtnUp {
-    border-radius: 50%;
-    width: 2rem;
-    height: 2rem;
-    background-color: #07f1e6;
-    border: none;
-    position: fixed;
-    bottom: 2%;
-    right: 3%;
-    transition: 0.3s all ;
-  }
-
-  .App-Dark a .ScrollBtnUp:hover {
-    background-color: #058f88;
-    border: 1px solid #07f1e5b0;;
-
-  }
-
-  .App-Light a .ScrollBtnUp:hover {
-    background-color: #cea76e;
-    border: 1px solid #cea86ea4;
-  }
-
-  
- .Divider{
-  width: 90%;
-  margin: 2rem;
 }
 
+.App-Dark a .ScrollBtnUp {
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  background-color: #07f1e6;
+  border: none;
+  position: fixed;
+  bottom: 2%;
+  right: 3%;
+  transition: 0.3s all;
+}
+
+.App-Dark a .ScrollBtnUp:hover {
+  background-color: #058f88;
+  border: 1px solid #07f1e5b0;
+  ;
+
+}
+
+.App-Light a .ScrollBtnUp:hover {
+  background-color: #cea76e;
+  border: 1px solid #cea86ea4;
+}

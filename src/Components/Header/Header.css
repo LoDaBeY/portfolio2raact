@@ -48,6 +48,8 @@
     text-decoration: none;
     color: rgb(12, 84, 156);
     transition: all 1s;
+    cursor: pointer;
+
   }
   .App-Dark  .Logo-Photo-Name  h3 a:hover{
     color: #0993e2;;

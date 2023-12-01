@@ -2,7 +2,6 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import "./Header.css";
 import "./HeaderMobileView.css";
-import * as React from "react";
 import LogoPhoto from "../../Assets/KG Logo.jpg";
 import { NavLink } from "react-router-dom";
 import { useContext, useState } from "react";
@@ -61,7 +60,7 @@ function Header() {
               <div className="Menu-list">
                 <ul>
                   <li>
-                    <a href="#Translation">Translation</a>
+                    <a  href="#Translation">Translation</a>
                   </li>
                   <li>
                     <a href="#Transcription">Transcription</a>

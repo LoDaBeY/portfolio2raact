@@ -14,7 +14,7 @@ function MainContent() {
     });
     setNewArray(fuck);
   };
-  
+
   return (
     <div className="MainContent">
       {/* Headline
@@ -36,13 +36,12 @@ function MainContent() {
             <button
               onClick={() => {
                 setCurrentActive("button-active");
-                
+
                 setNewArray(ProjectData);
               }}
               className={
                 CurrentActive === "button-active" ? "button-active" : "button"
               }
-          
             >
               All Projects
             </button>
@@ -60,6 +59,7 @@ function MainContent() {
             >
               Project Management
             </button>
+
             <button
               onClick={() => {
                 setCurrentActive("Translation");
@@ -111,7 +111,7 @@ function MainContent() {
           <div className="Card-Containers">
             {NewArray.map((item) => {
               return (
-                <div key={item} className="card">
+                <div key={item.id} className="card">
                   <div className="card-body">
                     <img style={{ width: 300 }} src={item.image} alt="" />
                     <div style={{ width: 300 }} className="TitleAndDescription">
